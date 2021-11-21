@@ -27,14 +27,16 @@
         font-size: 18px;
         letter-spacing: 2.7px;
         padding-bottom: 20px;
+        color: #FFFFFF;
 
         span {
           color: #FFFFFF;
           font-weight: 900;
         }
+
         &:hover {
-          border-bottom: 4px solid #FFFFFF;
-          opacity: 0.5;
+          border-bottom: 4px solid #FFFFFF80;
+          transition: opacity 0.2s ease;
         }
 
         &.active {
