@@ -1,0 +1,25 @@
+.navbar {
+  background-color: transparent !important;
+  padding: 4em 0px 4em 4em;
+
+  .navbar-nav {
+    // background-color: #979797;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 20px 100px 20px 100px;
+    position: absolute;
+    right: 0;
+    // filter: blur(8px);
+    // -webkit-filter: blur(8px);
+    // opacity: 0.4;
+    backdrop-filter: blur(81.5485px);
+
+    .nav-item {
+      margin: 0px 20px 0px 20px;
+
+      .nav-link {
+        font-family: 'Barlow Condensed Regular'; //2.7 Character Space
+        font-size: 16px;
+      }
+    }
+  }
+}
