@@ -2,23 +2,44 @@
   background-color: transparent !important;
   padding: 4em 0px 4em 4em;
 
+  .nav-separator {
+    height: 1.5px;
+    width: 35vw;
+    margin-left: 100px;
+    z-index: 9;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+
   .navbar-nav {
-    // background-color: #979797;
     background: rgba(255, 255, 255, 0.04);
-    padding: 20px 100px 20px 100px;
+    padding: 20px 100px 0px 80px;
     position: absolute;
     right: 0;
-    // filter: blur(8px);
-    // -webkit-filter: blur(8px);
-    // opacity: 0.4;
-    backdrop-filter: blur(81.5485px);
+    backdrop-filter: blur(30.5485px);
 
     .nav-item {
-      margin: 0px 20px 0px 20px;
+      padding: 0px 20px 0px 20px;
 
       .nav-link {
-        font-family: 'Barlow Condensed Regular'; //2.7 Character Space
-        font-size: 16px;
+        font-family: 'BarlowCondensed';
+        font-size: 18px;
+        letter-spacing: 2.7px;
+        padding-bottom: 20px;
+
+        span {
+          color: #FFFFFF;
+          font-weight: 900;
+        }
+        &:hover {
+          border-bottom: 4px solid #FFFFFF;
+          opacity: 0.5;
+        }
+
+        &.active {
+          border-bottom: 4px solid #FFFFFF;
+        }
       }
     }
   }
