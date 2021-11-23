@@ -1,0 +1,50 @@
+body {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  color: $white;
+}
+
+h1 {
+  font-size: 150px !important;
+  font-family: 'Bellefair';
+  color: $white;
+  line-height: 172px;
+}
+
+h2 {
+  font-size: 100px;
+  font-family: 'Bellefair';
+}
+
+h3 {
+  font-size: 56px;
+  font-family: 'Bellefair';
+}
+
+h4 {
+  font-size: 32px;
+  font-family: 'Bellefair';
+}
+
+h5 {
+  font-family: 'BarlowCondensed';
+  font-size: 28px !important;
+  letter-spacing: 4.75px;
+  color: $secondary;
+  font-size: 28px;
+  line-height: 34px !important;
+}
+
+.subheading1 {
+  font-size: 28px;
+}
+
+.subheading2 {
+  font-family: 'BarlowCondensed';
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
