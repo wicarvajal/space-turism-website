@@ -28,6 +28,8 @@ h3 {
 h4 {
   font-size: 32px;
   font-family: 'Bellefair';
+  line-height: 37px;
+  letter-spacing: 2px;
 }
 
 h5 {
@@ -35,7 +37,6 @@ h5 {
   font-size: 28px !important;
   letter-spacing: 4.75px;
   color: $secondary;
-  font-size: 28px;
   line-height: 34px !important;
 }
 
@@ -50,5 +51,9 @@ h5 {
 }
 
 p {
-  color: $white;
+  font-family: 'BarlowCondensed';
+  color: $secondary;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
 }
