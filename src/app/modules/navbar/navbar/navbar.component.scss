@@ -14,7 +14,7 @@
 
   .navbar-nav {
     background: rgba(255, 255, 255, 0.04);
-    padding: 20px 100px 0px 80px;
+    padding: 0px 100px 0px 80px;
     position: absolute;
     right: 0;
     backdrop-filter: blur(30.5485px);
@@ -23,6 +23,7 @@
       padding: 0px 20px 0px 20px;
 
       .nav-link {
+        padding-top: 30px;
         padding-bottom: 20px;
         color: #FFFFFF;
 
@@ -43,10 +44,3 @@
     }
   }
 }
-
-// .nav-text {
-//   font-family: 'BarlowCondensed';
-//   font-size: 16px;
-//   line-height: 19px;
-//   letter-spacing: 2.7px;
-// }
