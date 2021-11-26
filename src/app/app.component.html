@@ -1,5 +1,5 @@
-<div class="main-container" style="background-image: url({{ backgroundImage }})">
-  <app-navbar></app-navbar>
+<div class="main-container" style="background-image: url('{{ backgroundImage }}')">
+  <app-navbar [windowClasification]="windowClasification"></app-navbar>
   
   <router-outlet></router-outlet>
 </div>
