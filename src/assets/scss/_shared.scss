@@ -36,8 +36,12 @@ h5 {
   font-family: 'BarlowCondensed';
   font-size: 28px !important;
   letter-spacing: 4.75px;
-  color: $secondary;
+  color: $white;
   line-height: 34px !important;
+
+  span {
+    opacity: 0.25;
+  }
 }
 
 .subheading1 {
