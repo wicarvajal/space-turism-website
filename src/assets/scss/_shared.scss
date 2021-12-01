@@ -16,8 +16,9 @@ h1 {
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 100px !important;
   font-family: 'Bellefair';
+  color: $white;
 }
 
 h3 {

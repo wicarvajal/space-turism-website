@@ -1,0 +1,32 @@
+.destination-detail-container {
+  width: 100%;
+  padding: 10% 10% 10% 20%;
+
+  .navbar {
+    background-color: transparent !important;
+
+    .nav-item {
+      margin: 0px 20px 0px 0px;
+      padding: 0;
+      justify-content: space-between;
+    }
+    .nav-link {
+      padding: 30px 0px 20px 0px;
+      color: #FFFFFF;
+
+      span {
+        color: #FFFFFF;
+        font-weight: 900;
+      }
+
+      &:hover {
+        border-bottom: 4px solid #FFFFFF80;
+        transition: opacity 0.2s ease;
+      }
+
+      &.active {
+        border-bottom: 4px solid #FFFFFF;
+      }
+    }
+  }
+}
