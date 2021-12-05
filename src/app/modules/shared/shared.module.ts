@@ -14,7 +14,8 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    RouterModule
   ]
 })
-export class NavbarModule { }
+export class SharedModule { }

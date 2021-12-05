@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DestinationPageComponent } from './destination-page/destination-page.component';
 import { DestinationDetailComponent } from './destination-detail/destination-detail.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -11,10 +12,11 @@ import { DestinationDetailComponent } from './destination-detail/destination-det
     DestinationDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
-  // exports: [
-  //   DestinationDetailComponent
-  // ]
+  exports: [
+        
+  ]
 })
 export class DestinationModule { }

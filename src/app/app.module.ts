@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DestinationModule } from './modules/destination/destination.module';
-import { NavbarModule } from './modules/navbar/navbar.module';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { NavbarModule } from './modules/navbar/navbar.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavbarModule,
+    SharedModule,
     DestinationModule
   ],
   providers: [],
