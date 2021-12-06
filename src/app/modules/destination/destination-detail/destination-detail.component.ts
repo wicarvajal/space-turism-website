@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IDestination } from '../../shared/interfaces/destinations';
 
 @Component({
   selector: 'app-destination-detail',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./destination-detail.component.scss']
 })
 export class DestinationDetailComponent implements OnInit {
-
-  constructor() { }
+  @Input() selectedDestination: IDestination;
+  constructor() {
+    this.selectedDestination = {};
+  }
 
   ngOnInit(): void {
   }

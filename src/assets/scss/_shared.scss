@@ -46,13 +46,19 @@ h5 {
 }
 
 .subheading1 {
+  font-family: 'Bellefair';
   font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $white;
 }
 
 .subheading2 {
   font-family: 'BarlowCondensed';
   font-size: 14px;
   letter-spacing: 2.35px;
+  line-height: 17px;
+  color: $secondary;
 }
 
 p {

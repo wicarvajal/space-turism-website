@@ -1,8 +1,18 @@
 <div class="destination-main-container">
   <div>
     <h5><span>01</span> PICK YOUR DESTINATION</h5>
-    <img src="../../../../assets/img/destination/image-moon.png" alt="" class="destination-image">
+    <img src="../../../.{{selectedDestination.images?.png}}" alt="" class="destination-image">
+    <!-- <img src="../../../../assets/img/destination/image-moon.png" alt="" class="destination-image"> -->
   </div>
 
-  <app-destination-detail></app-destination-detail>
+  <div class="destination-detail-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-text">
+      <ul class="nav mb-2 mb-lg-0">
+        <li class="nav-item" data-toggle="tab" *ngFor="let destination of destinationList">
+          <a class="nav-link" [ngClass]="{'active': selectedDestination.name === destination.name}" (click)="setDestination(destination?.name!)" >{{ destination?.name!.toUpperCase() }}</a>
+        </li>
+      </ul>
+    </nav>
+    <app-destination-detail [selectedDestination]="selectedDestination"></app-destination-detail>
+  </div>
 </div>

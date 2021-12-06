@@ -7,4 +7,41 @@
     height: 350px;
     margin: 60px 20px 20px 80px;
   }
+
+  .navbar {
+    background-color: transparent !important;
+    z-index: 1;
+
+    .nav-item {
+      margin: 0px 20px 0px 0px;
+      padding: 0;
+      justify-content: space-between;
+    }
+    .nav-link {
+      padding: 30px 0px 20px 0px;
+      color: #FFFFFF;
+      border-bottom: 4px solid #FFFFFF00;
+      cursor: pointer;
+
+      span {
+        color: #FFFFFF;
+        font-weight: 900;
+      }
+
+      &:hover {
+        border-bottom: 4px solid #FFFFFF80;
+        transition: opacity 0.2s ease;
+      }
+
+      &.active {
+        border-bottom: 4px solid #FFFFFF;
+      }
+    }
+  }
+
+  .destination-detail-container {
+    width: 50%;
+    padding: 2% 4% 2% 10%;
+    min-width: 425px;
+  }
 }

@@ -1,34 +1,15 @@
 .destination-detail-container {
-  width: 100%;
-  padding: 10% 10% 10% 20%;
-  min-width: 425px;
+  // width: 100%;
+  // padding: 10% 10% 10% 20%;
+  // min-width: 425px;
 
-  .navbar {
-    background-color: transparent !important;
+  .destination-name {
+    -webkit-transition: floatText 0.4s ease-in-out;
+    transition: floatText 0.4s ease-in-out;
+  }
 
-    .nav-item {
-      margin: 0px 20px 0px 0px;
-      padding: 0;
-      justify-content: space-between;
-    }
-    .nav-link {
-      padding: 30px 0px 20px 0px;
-      color: #FFFFFF;
-      border-bottom: 4px solid #FFFFFF00;
-
-      span {
-        color: #FFFFFF;
-        font-weight: 900;
-      }
-
-      &:hover {
-        border-bottom: 4px solid #FFFFFF80;
-        transition: opacity 0.2s ease;
-      }
-
-      &.active {
-        border-bottom: 4px solid #FFFFFF;
-      }
-    }
+  .separator {
+    height: 3px;
+    background: #383B4B;
   }
 }

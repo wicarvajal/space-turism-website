@@ -11,12 +11,23 @@
     opacity: 0.25;
   }
 
+  .separator-end {
+    height: 1.5px;
+    width: 40px;
+    background: #FFFFFF;
+    opacity: 0.25;
+    z-index: 999;
+    position: absolute;
+    right: 742px;
+  }
+
   .navbar-nav {
     background: rgba(255, 255, 255, 0.04);
     padding: 0px 100px 0px 80px;
     position: absolute;
     right: 0;
     backdrop-filter: blur(30.5485px);
+    z-index: 9;
 
     .nav-item {
       padding: 0px 20px 0px 20px;

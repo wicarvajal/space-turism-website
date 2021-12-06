@@ -1,28 +1,21 @@
 <div class="destination-detail-container">
+  <h2 class="destination-name">{{ selectedDestination.name?.toUpperCase() }}</h2>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-text">
-    <ul class="nav mb-2 mb-lg-0">
-      <li class="nav-item" data-toggle="tab" >
-        <a class="nav-link active" >MOON</a>
-      </li>
-      <li class="nav-item" data-toggle="tab" >
-        <a class="nav-link" >MARS</a>
-      </li>
-      <li class="nav-item" data-toggle="tab" >
-        <a class="nav-link" >EUROPE</a>
-      </li>
-      <li class="nav-item" data-toggle="tab" >
-        <a class="nav-link" >TITAN</a>
-      </li>
-    </ul>
-  </nav>
-
-  <h2>MOON</h2>
-
-  <p>
-    Let’s face it; if you want to go to space, you might as well
-    genuinely go to outer space and not hover kind of on the edge of it.
-    Well sit back, and relax because we’ll give
-    you a truly out of this world experience!
+  <p class="destination-description">
+    {{ selectedDestination.description }}
   </p>
+
+  <hr class="separator">
+
+  <div class="row">
+    <div class="subheading2 col-6">
+      AVG. DISTANCE
+      <div class="subheading1">{{ selectedDestination.distance }}</div>
+    </div>
+  
+    <div class="subheading2 col-6">
+      EST. TRAVEL TIME
+      <div class="subheading1">{{ selectedDestination.travel }}</div>
+    </div>
+  </div>
 </div>
