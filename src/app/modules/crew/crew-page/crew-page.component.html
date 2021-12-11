@@ -1,1 +1,15 @@
-<p>crew-page works!</p>
+<div class="destination-main-container">
+  <div>
+    <h5><span>01</span> PICK YOUR DESTINATION</h5>
+    <!-- <img src="../../../.{{selectedDestination.images?.png}}" alt="" class="destination-image"> -->
+  </div>
+
+  <div class="crew-detail-container carousel">
+    <ol class="carousel-indicators">
+      <li *ngFor="let member of crewList"
+        [ngClass]="{'active': selectedCrewMember.name === member.name}"
+        (click)="setCrewMember(member?.name!)">
+      </li>
+    </ol>
+  </div>
+</div>
