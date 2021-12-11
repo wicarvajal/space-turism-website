@@ -1,22 +1,26 @@
+.crew-main-container {
+  margin: 2% 5% 5% 8%;
+  // display: flex;
 
-.crew-detail-container {
-  height: 300px;
+  .crew-detail-container {
+    height: 300px;
 
-  .carousel-indicators li {
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    cursor: pointer;
-    background-color: white;
-    opacity: 0.17;
-    margin: 0px 20px;
+    .carousel-indicators li {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      cursor: pointer;
+      background-color: white;
+      opacity: 0.17;
+      margin: 0px 20px;
 
-    &.active {
-      opacity: 1 !important;
-    }
+      &.active {
+        opacity: 1 !important;
+      }
 
-    &:hover {
-      opacity: 0.5;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
-import {filter} from 'rxjs/operators';
-import { EAvailableRoutes } from './enum/available-routes';
+import { filter } from 'rxjs/operators';
+import { EAvailableRoutes } from './modules/shared/enum/available-routes';
 
 @Component({
   selector: 'app-root',
@@ -36,12 +36,12 @@ export class AppComponent implements OnInit {
 
   listenRouterChanges() {
     this.router.events
-    .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
-    .subscribe((url: NavigationEnd)  => {
-      const cleanUrl = url.urlAfterRedirects.replace('/', '');
-      this.currentUrl = cleanUrl;
-      this.setBackgroundImage(cleanUrl);
-    });
+      .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
+      .subscribe((url: NavigationEnd) => {
+        const cleanUrl = url.urlAfterRedirects.replace('/', '');
+        this.currentUrl = cleanUrl;
+        this.setBackgroundImage(cleanUrl);
+      });
   }
 
   public setBackgroundImage(url: string) {
@@ -66,8 +66,8 @@ export class AppComponent implements OnInit {
 
   getWindowSizeClasification(): string {
     if (this.innerWidth > 1000) { return 'desktop' } else
-    if (this.innerWidth < 1000 && this.innerWidth > 500) { return 'tablet' } else
-    if (this.innerWidth < 500) { return 'mobile' } else
-    return 'desktop';
+      if (this.innerWidth < 1000 && this.innerWidth > 500) { return 'tablet' } else
+        if (this.innerWidth < 500) { return 'mobile' } else
+          return 'desktop';
   }
 }
