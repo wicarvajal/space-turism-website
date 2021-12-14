@@ -1,0 +1,70 @@
+body {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  color: $white;
+}
+
+h1 {
+  font-size: 150px !important;
+  font-family: 'Bellefair';
+  color: $white;
+  line-height: 172px;
+}
+
+h2 {
+  font-size: 100px !important;
+  font-family: 'Bellefair';
+  color: $white;
+}
+
+h3 {
+  font-size: 56px;
+  font-family: 'Bellefair';
+}
+
+h4 {
+  font-size: 32px;
+  font-family: 'Bellefair';
+  line-height: 37px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-family: 'BarlowCondensed';
+  font-size: 28px !important;
+  letter-spacing: 4.75px;
+  color: $white;
+  line-height: 34px !important;
+
+  span {
+    opacity: 0.25;
+  }
+}
+
+.subheading1 {
+  font-family: 'Bellefair';
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.subheading2 {
+  font-family: 'BarlowCondensed';
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  line-height: 17px;
+  color: $secondary;
+}
+
+p {
+  font-family: 'BarlowCondensed';
+  color: $secondary;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
