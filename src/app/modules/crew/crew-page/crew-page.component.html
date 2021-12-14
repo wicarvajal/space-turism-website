@@ -2,14 +2,14 @@
   <div>
     <h5><span>01</span> MEET YOUR CREW</h5>
     <!-- <img src="../../../.{{selectedDestination.images?.png}}" alt="" class="destination-image"> -->
+    <div class="crew-detail-container carousel">
+      <ol class="carousel-indicators">
+        <li *ngFor="let member of crewList"
+          [ngClass]="{'active': selectedCrewMember.name === member.name}"
+          (click)="setCrewMember(member?.name!)">
+        </li>
+      </ol>
+    </div>
   </div>
 
-  <div class="crew-detail-container carousel">
-    <ol class="carousel-indicators">
-      <li *ngFor="let member of crewList"
-        [ngClass]="{'active': selectedCrewMember.name === member.name}"
-        (click)="setCrewMember(member?.name!)">
-      </li>
-    </ol>
-  </div>
 </div>
