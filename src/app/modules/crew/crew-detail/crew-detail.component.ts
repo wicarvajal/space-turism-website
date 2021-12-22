@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICrew } from '../../shared/interfaces/crew';
 
 @Component({
   selector: 'app-crew-detail',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crew-detail.component.scss']
 })
 export class CrewDetailComponent implements OnInit {
+  @Input() selectedCrewMember: ICrew;
 
-  constructor() { }
+  constructor() {
+    this.selectedCrewMember = {};
+  }
 
   ngOnInit(): void {
   }

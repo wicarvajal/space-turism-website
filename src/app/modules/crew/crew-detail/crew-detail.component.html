@@ -1,1 +1,9 @@
-<p>crew-detail works!</p>
+<div class="crew-detail-container">
+  <h4 class="member-role">{{ selectedCrewMember.role?.toUpperCase() }}</h4>
+
+  <h3 class="member-name">{{ selectedCrewMember.name?.toUpperCase() }}</h3>
+
+  <p class="member-description">
+    {{ selectedCrewMember?.bio }}
+  </p>
+</div>

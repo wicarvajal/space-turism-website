@@ -1,7 +1,8 @@
 <div class="crew-main-container">
   <div>
-    <h5><span>01</span> MEET YOUR CREW</h5>
-    <!-- <img src="../../../.{{selectedDestination.images?.png}}" alt="" class="destination-image"> -->
+    <h5 class="section-title"><span>02</span> MEET YOUR CREW</h5>
+    <app-crew-detail [selectedCrewMember]="selectedCrewMember"></app-crew-detail>
+
     <div class="crew-detail-container carousel">
       <ol class="carousel-indicators">
         <li *ngFor="let member of crewList"
@@ -12,4 +13,7 @@
     </div>
   </div>
 
+  <div>
+    <img src="../../../.{{selectedCrewMember.images?.png}}" alt="" class="crew-member-image">
+  </div>
 </div>
